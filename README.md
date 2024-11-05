@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # albinstore
 
 A new Flutter project.
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# albinstore-mobile
+>>>>>>> 984d78addb9ca0f8635d950f115d1022a74b6aa3

@@ -133,3 +133,73 @@ Icon: Menampilkan ikon sesuai item.icon.
 `final`: Nilai ditentukan saat runtime dan tidak bisa diubah setelah pertama kali diinisialisasi. Contoh: `final waktu = new DateTime.now();`
 
 </details>
+
+<details> 
+  <summary><b> Tugas 8: Flutter Navigation, Layouts, Forms, and Input Elements</b></summary>
+
+### 1.  Apa kegunaan `const` di Flutter? Jelaskan apa keuntungan ketika menggunakan `const` pada kode Flutter. Kapan sebaiknya kita menggunakan `const`, dan kapan sebaiknya tidak digunakan?
+`const` digunakan untuk membuat objek yang bersifat immutable (tidak dapat diubah) dan compile-time constant (konstan pada waktu kompilasi).
+
+### 2. Jelaskan dan bandingkan penggunaan Column dan Row pada Flutter. Berikan contoh implementasi dari masing-masing layout widget ini!
+`Column` digunakan untuk menyusun widget secara vertikal. Sedangkan `Row` digunakan untuk menyusun widget secara horizontal.
+
+Contoh Pengimplementasian `Coloumn` adalah seperti
+```
+Column(
+  children: [
+    Text('Item 1'),
+    Text('Item 2'),
+    Text('Item 3'),
+  ],
+)
+```
+
+Sedangkan Contoh Pengimplementasian `row` adalah seperti
+```
+Row(
+  children: [
+    Icon(Icons.star),
+    Text('Star'),
+  ],
+)
+```
+
+### 3. Sebutkan apa saja elemen input yang kamu gunakan pada halaman form yang kamu buat pada tugas kali ini. Apakah terdapat elemen input Flutter lain yang tidak kamu gunakan pada tugas ini? Jelaskan!
+Elemen yang digunakan salah satunya adalah `TextFormField`, ya ada banyak elemen input flutter yang tidak digunakan seperti `Dropdown Button`.
+
+### 4. Bagaimana cara kamu mengatur tema (theme) dalam aplikasi Flutter agar aplikasi yang dibuat konsisten? Apakah kamu mengimplementasikan tema pada aplikasi yang kamu buat?
+Menggunakan `ThemeData` dan `MaterialApp` dan ya di implementasikan pada `main.dart` yang berisi
+```
+return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        // This is the theme of your application.
+        //
+        // TRY THIS: Try running your application with "flutter run". You'll see
+        // the application has a purple toolbar. Then, without quitting the app,
+        // try changing the seedColor in the colorScheme below to Colors.green
+        // and then invoke "hot reload" (save your changes or press the "hot
+        // reload" button in a Flutter-supported IDE, or press "r" if you used
+        // the command line to start the app).
+        //
+        // Notice that the counter didn't reset back to zero; the application
+        // state is not lost during the reload. To reset the state, use hot
+        // restart instead.
+        //
+        // This works for code too, not just values: Most code changes can be
+        // tested with just a hot reload.
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.deepPurple,
+        ).copyWith(
+          primary: const Color(0xFF4C51BF),
+          secondary: const Color(0xFF4C51BF),
+        ),
+      ),
+      home: MyHomePage(),
+    );
+```
+### 5.  Bagaimana cara kamu menangani navigasi dalam aplikasi dengan banyak halaman pada Flutter?
+
+Biasanya menggunakan `Navigator`
+
+</details>
